@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+.main {
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+
+.header-container {
+    padding: 15px 20px;
+    max-width: 1350px;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 62px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.header-logo {
+    flex-grow: 2;
+    
+}
+
+.header-menu{
+  
+    font-weight: bold;
+}
+
+.header-contact {
+    background-color:#4CE0D7;
+    color: #262626;
+    padding:8px 30px ;
+    border-radius: 40px;
+    font-weight: bold;
+    
+    
+}
+
+.header-search{
+}
+
+
+
+
+
+
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+   
+}
+
+.logo {
+    font-family: Cinzel;
+font-size: 36px;
+font-weight: 400;
+line-height: 48.53px;
+text-align: left;
+
+
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contact-button {
+    background-color: #5bc0de;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.search-icon {
+    color: #5bc0de;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    max-width: 1272px;
+    margin: 0px auto;
+    background-image: url('image/girl.png');
+    background-size: contain;
+    aspect-ratio: 1272 / 559;
+}
+
+.hero-content {
+    padding-left: 40px;
+    color: white;
+}
+
+.image-top-text {
+        font-size: 12px;
+        letter-spacing: 2px;
+        font-weight: 600;
+}
+
+.hero-text {
+    font-size: 46px;
+    margin: 30px 0px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.fancy-text {
+    font-weight: 700;
+    color: cyan;
+    background: linear-gradient(to right, #4CE0D7, #8BA9F4);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero-content p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+
+
+
+
+.topics {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.topics h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.topic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.topic {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.topic img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.topic h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.view-more {
+    background-color: #5bc0de;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 10px;
+}
