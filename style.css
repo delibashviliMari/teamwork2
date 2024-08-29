@@ -34,8 +34,9 @@ body {
     
 }
 
+
+
 .header-menu{
-  
     font-weight: bold;
 }
 
@@ -45,68 +46,100 @@ body {
     padding:8px 30px ;
     border-radius: 40px;
     font-weight: bold;
-    
-    
 }
 
 .header-search{
 }
 
+@media screen and (max-width: 700px) {
+    .header-menu{
+        font-weight: bold;
+    }
+    
+    .header-contact {
+        background-color:#4CE0D7;
+        color: #262626;
+        padding:8px 30px ;
+        border-radius: 40px;
+        font-weight: bold;
+    }
+    
+    .header-search{
+    }
+}
 
+/* Hamburger Menu Button */
+.hamburger-menu {
+    display: none; /* Hidden by default, shown only on small screens */
+    flex-direction: column;/* Aligns the 3 spans (lines) vertically */
+    justify-content: space-around; /* Evenly spaces the 3 lines */
+    width: 30px; /* of the hamburger icon */
+    height: 24px;  /* Height of the hamburger icon */
+    background: transparent;  /* No background color */
+    border: none;  /* No border */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    z-index: 10;  /* Ensures the hamburger icon is above other content */
+}
 
+/* Styling for the 3 lines inside the hamburger icon */
+.hamburger-menu span {
+    width: 100%; /* Lines take up the full width of the button */
+    height: 3px; /* Thickness of each line */
+    background-color: black;  /* Color of the lines */
+    border-radius: 3px;  /* Rounds the edges of the lines */
+    transition: all 0.3s ease;  /* Smooth transition for the 'X' animation */
+}
 
+/* Hidden checkbox to control the menu's state */
+#menu-toggle {
+    display: none;
+}
+/* When the checkbox is checked, transform the hamburger icon into an 'X' */
+#menu-toggle:checked + .hamburger-menu span:nth-child(1) {
+    transform: rotate(45deg) translateY(11px);
+}
 
+#menu-toggle:checked + .hamburger-menu span:nth-child(2) {
+    opacity: 0;
+}
 
+#menu-toggle:checked + .hamburger-menu span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-11px);
+}
 
-
-
-nav {
+#menu-toggle:checked ~ .header-nav {
     display: flex;
-    justify-content: space-between;
+}
+
+/***************** Hidden menu initially **********************/
+.header-nav {
+    display: flex;
+    gap: 62px;
     align-items: center;
-    font-weight: bold;
-   
+}
+/* Media query for screens smaller than 1200px */
+@media screen and (max-width: 1200px) {
+    /* Hide the original menu items */
+    .header-nav {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 70px; /* Adjust this value to place the menu below the header */
+        right: 20px;
+        background-color: #f4f4f4;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 9;
+    }
+ /* Display the hamburger menu button on small screens */
+    .hamburger-menu {
+        display: flex;
+    }
 }
 
-.logo {
-    font-family: Cinzel;
-font-size: 36px;
-font-weight: 400;
-line-height: 48.53px;
-text-align: left;
 
-
-}
-
-.menu {
-    display: flex;
-    list-style: none;
-
-}
-
-.menu li {
-    margin-left: 20px;
-}
-
-.menu li a {
-    color: black;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.contact-button {
-    background-color: #5bc0de;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.search-icon {
-    color: #5bc0de;
-    font-size: 20px;
-    margin-left: 20px;
-}
 
 
 
@@ -138,6 +171,15 @@ text-align: left;
     line-height: 100%;
 }
 
+@media screen and (max-width: 700px) {
+    .hero-text {
+        font-size: 30px;
+        margin: 20px 0px;
+        font-weight: 400;
+        line-height: 100%;
+    }
+}
+
 .fancy-text {
     font-weight: 700;
     color: cyan;
@@ -151,53 +193,13 @@ text-align: left;
     line-height: 30px;
     font-weight: 300;
 }
-
-
-
-
-
-.topics {
-    padding: 40px 20px;
-    text-align: center;
+@media screen and (max-width: 700px) {
+    .hero-content p  {
+        font-size: 19px;
+        margin: 20px 0px;
+        font-weight: 400;
+        line-height: 100%;
+    }
 }
 
-.topics h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
 
-.topic-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.topic {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.topic img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 15px;
-}
-
-.topic h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.view-more {
-    background-color: #5bc0de;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 14px;
-    display: inline-block;
-    margin-top: 10px;
-}
