@@ -29,6 +29,8 @@ body {
     font-size: 14px;
 }
 
+
+
 .header-logo {
     flex-grow: 2;
     
@@ -38,6 +40,18 @@ body {
 
 .header-menu{
     font-weight: bold;
+}
+
+.header-menu a{
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.header-menu a:hover{
+  font-weight: bold;
+  text-decoration: none;
+  color: blue;
 }
 
 .header-contact {
