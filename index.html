@@ -1,461 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lux Ventus Blog</title>
-    <link rel="stylesheet" href="style.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lux Ventus Blog</title>
+        <link rel="stylesheet" href="style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="main">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="main">
+            <!--------------------------------------- HEADER ------------------------------>
+            <header class="header-container">
+                <div class="header-logo">
+                    <img src="image/logo.png" alt="" style="max-width: 240px" />
+                </div>
 
-      <header class="header-container">
-        <div class="header-logo">
-          <img src="image/logo.png" alt="" style="max-width: 240px" />
+                <input type="checkbox" id="menu-toggle" />
+                <label for="menu-toggle" class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <nav class="header-nav">
+                    <div class="header-menu"><a href="#">Fashion</a></div>
+                    <div class="header-menu"><a href="#">Lifestyle</a></div>
+                    <div class="header-menu"><a href="#">Spiritual</a></div>
+                    <div class="header-menu">
+                        <a href="#">Mental&nbsp;Health</a>
+                    </div>
+                    <button><a href="#">Contact&nbsp;Us</a></button>
+                    <div class="header-search">
+                        <img src="image/search boxs.png" alt="" />
+                    </div>
+                </nav>
+            </header>
+
+            <!------------------------------------- HERO BOX ---------------------------------->
+
+            <section class="hero">
+                <div class="hero-content">
+                    <div class="image-top-text">LUX VENTUS MAGAZINE</div>
+                    <div class="hero-text">
+                        We Are the
+                        <span class="fancy-text">Ventus&nbsp;Fashion</span>
+                    </div>
+                    <p>
+                        We like to gossip about everything, but we will
+                        <br />never forget the daily fashion dose.
+                    </p>
+                </div>
+            </section>
+
+            <!-- TOPICS SECTION -->
+
+            <section class="topics">
+                <h2>Topics</h2>
+                <div class="features">
+                    <div class="sec Lingerie">
+                        <img
+                            src="./image/Topics/lingerie-underwear.png"
+                            alt="Lingerie"
+                        />
+                        <p>Lingerie</p>
+                        <button class="view_more">View More</button>
+                    </div>
+
+                    <div class="sec spring">
+                        <img src="./image/Topics/dress.png" alt="Spring" />
+                        <p>Spring</p>
+                        <button class="view_more">View More</button>
+                    </div>
+
+                    <div class="sec yoga">
+                        <img src="./image/Topics/chakra@3x.png" alt="Yoga" />
+                        <p>Yoga</p>
+                        <button class="view_more">View More</button>
+                    </div>
+
+                    <div class="sec glow">
+                        <img src="./image/Topics/lipstick.png" alt="Glow" />
+                        <p>Glow</p>
+                        <button class="view_more">View More</button>
+                    </div>
+
+                    <div class="sec ensembles">
+                        <img
+                            src="./image/Topics/dress-wedding-dress.png"
+                            alt="Ensembles"
+                        />
+                        <p>Ensembles</p>
+                        <button class="view_more">View More</button>
+                    </div>
+
+                    <div class="sec skin_Care">
+                        <img
+                            src="./image/Topics/mask-theater.png"
+                            alt="Skin Care"
+                        />
+                        <p>Skin Care</p>
+                        <button class="view_more">View More</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- spacer -->
+            <hr />
+
+            <!-- HOT section -->
+
+            <section>
+                <div class="hot">
+                    <div class="image_container">
+                        <img
+                            src="./image/Hot/c14213fa3580f6fafe3cfec5e5ce3a72.jfif"
+                            alt="Fashion Image"
+                            class="main_image"
+                        />
+                        <button class="category_tag">FASHION</button>
+                    </div>
+                    <div class="content">
+                        <div class="author_and_date">
+                            <div class="info">
+                                <img
+                                    src="./image/Hot/556f5faa4a8978e04d8cbef4c370209c.jfif"
+                                    alt=""
+                                />
+                                <p class="author_name">Mallory Reyn</p>
+                                <p class="post_date">April 14th, 2023</p>
+                            </div>
+                            <div class="coming_in_hot">
+                                <p class="status_tag">COMING IN HOT!</p>
+                            </div>
+                        </div>
+                        <h2 class="post_title">
+                            The Latest Trends from the Moon Fashion Week.
+                        </h2>
+                        <p class="post_excerpt">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Ut et massa mi. Aliquam in hendrerit urna.
+                            Pellentesque sit amet sapien fringilla, mattis
+                            ligula consectetur, ultrices mauris. Maecenas vitae
+                            mattis tellus. Nullam quis imperdiet augue.
+                            Vestibulum.
+                        </p>
+                        <div class="more">
+                            <img
+                                src="./image/Hot/arrow-small-right.png"
+                                alt="Arrow"
+                            />
+                            <a href="#" class="read_more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- third section by mariami -->
+            <section>
+                <h2>Trending</h2>
+                <div class="trending-area">
+                    <!---------------------------trendig-box ------------------------->
+                    <div class="trending-box">
+                        <div class="trending-top">
+                            <div class="image_container">
+                                <img
+                                    src="./image/stress-girl.png"
+                                    alt="Fashion Image"
+                                    class="trending-image"
+                                />
+                                <button class="category_tag">LIFESTYLE</button>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <div class="author_and_date">
+                                <div class="info">
+                                    <img
+                                        src="./image/Hot/556f5faa4a8978e04d8cbef4c370209c.jfif"
+                                        alt=""
+                                    />
+                                    <p class="author_name">Mallory Reyn</p>
+                                    <p class="post_date">April 14th, 2023</p>
+                                </div>
+                            </div>
+                            <h2 class="post_title">
+                                10 Things to help you with social stress.
+                            </h2>
+                            <p class="post_excerpt">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Ut et massa mi. Aliquam in
+                                hendrerit urna. Pellentesque sit amet sapien
+                                fringilla, mattis ligula consectetur, ultrices
+                                mauris. Maecenas vitae mattis tellus. Nullam
+                                quis imperdiet augue. Vestibulum.
+                            </p>
+                            <div class="more">
+                                <img
+                                    src="./image/Hot/arrow-small-right.png"
+                                    alt="Arrow"
+                                />
+                                <a href="#" class="read_more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--------end trending-box------------------------->
+
+                    <!---------------------------trendig-box ------------------------->
+                    <div class="trending-box">
+                        <div class="trending-top">
+                            <div class="image_container">
+                                <img
+                                    src="./image/naked-girl.png"
+                                    alt="Fashion Image"
+                                    class="trending-image"
+                                />
+                                <button class="category_tag">SUMMER</button>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <div class="author_and_date">
+                                <div class="info">
+                                    <img
+                                        src="./image/Hot/556f5faa4a8978e04d8cbef4c370209c.jfif"
+                                        alt=""
+                                    />
+                                    <p class="author_name">Mallory Reyn</p>
+                                    <p class="post_date">April 14th, 2023</p>
+                                </div>
+                            </div>
+                            <h2 class="post_title">
+                                The summer 2023 lineup is finally here.
+                            </h2>
+                            <p class="post_excerpt">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Ut et massa mi. Aliquam in
+                                hendrerit urna. Pellentesque sit amet sapien
+                                fringilla, mattis ligula consectetur, ultrices
+                                mauris. Maecenas vitae mattis tellus. Nullam
+                                quis imperdiet augue. Vestibulum.
+                            </p>
+                            <div class="more">
+                                <img
+                                    src="./image/Hot/arrow-small-right.png"
+                                    alt="Arrow"
+                                />
+                                <a href="#" class="read_more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--------end trending-box------------------------->
+                </div>
+            </section>
+
+            <!-- 4 section by mariami -->
+
+            <!--                            LAST SECTION                              -->
+
+            <section class="last">
+                <div class="last_section">
+                    <div class="last_section_button">
+                        <img src="./image/two-girl.png" alt="fashion photos" />
+                        <button>FASHION</button>
+                    </div>
+
+                    <div class="last_section_info">
+                        <div class="last_section_author">
+                            <div class="last_section_photo">
+                                <img
+                                    src="./image/Hot/556f5faa4a8978e04d8cbef4c370209c.jfif"
+                                    alt=""
+                                />
+                                <p>Mallory Reyn</p>
+                            </div>
+
+                            <div class="last_section_date">
+                                <p>April 14th, 2023</p>
+                            </div>
+                        </div>
+
+                        <div class="last_section_text">
+                            <h1>5 Reasons to avoid shopping on saturdays</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                Pellentesque sit amet sapien fringilla, mattis
+                                mattis tellus. Nullam quis imperdiet augue.
+                                Vestibulum.
+                            </p>
+                        </div>
+
+                        <div class="more last_section_more">
+                            <img
+                                src="./image/Hot/arrow-small-right.png"
+                                alt="Arrow"
+                            />
+                            <a href="#" class="read_more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="last_section">
+                    <div class="last_section_button">
+                        <img src="./image/hat-girl.png" alt="fashion photos" />
+                        <button>ENSEMBLES</button>
+                    </div>
+
+                    <div class="last_section_info">
+                        <div class="last_section_author">
+                            <div class="last_section_photo">
+                                <img
+                                    src="./image/Hot/556f5faa4a8978e04d8cbef4c370209c.jfif"
+                                    alt=""
+                                />
+                                <p>Mallory Reyn</p>
+                            </div>
+
+                            <div class="last_section_date">
+                                <p>April 14th, 2023</p>
+                            </div>
+                        </div>
+
+                        <div class="last_section_text">
+                            <h1>5 Reasons to avoid shopping on saturdays</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                Pellentesque sit amet sapien fringilla, mattis
+                                mattis tellus. Nullam quis imperdiet augue.
+                                Vestibulum.
+                            </p>
+                        </div>
+
+                        <div class="more last_section_more">
+                            <img
+                                src="./image/Hot/arrow-small-right.png"
+                                alt="Arrow"
+                            />
+                            <a href="#" class="read_more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="last_section">
+                    <div class="last_section_button">
+                        <img src="./image/red-short.png" alt="fashion photos" />
+                        <button>MENTAL HEALTH</button>
+                    </div>
+
+                    <div class="last_section_info">
+                        <div class="last_section_author">
+                            <div class="last_section_photo">
+                                <img
+                                    src="./image/Hot/556f5faa4a8978e04d8cbef4c370209c.jfif"
+                                    alt=""
+                                />
+                                <p>Mallory Reyn</p>
+                            </div>
+
+                            <div class="last_section_date">
+                                <p>April 14th, 2023</p>
+                            </div>
+                        </div>
+
+                        <div class="last_section_text">
+                            <h1>5 Reasons to avoid shopping on saturdays</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                Pellentesque sit amet sapien fringilla, mattis
+                                mattis tellus. Nullam quis imperdiet augue.
+                                Vestibulum.
+                            </p>
+                        </div>
+
+                        <div class="more last_section_more">
+                            <img
+                                src="./image/Hot/arrow-small-right.png"
+                                alt="Arrow"
+                            />
+                            <a href="#" class="read_more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer">
+                    <div class="footer_logo">
+                        <a href="#"><img src="./image/logo.png" alt="" /></a>
+                    </div>
+
+                    <div class="footer_nav">
+                        <h1>Let’s Hang Out</h1>
+                        <a href="#"
+                            ><img src="./image/footer/facebook.png" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="./image/footer/twitter.png" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="./image/footer/linkedin.png" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="./image/footer/youtube.png" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="./image/footer/instagram.png" alt=""
+                        /></a>
+                    </div>
+                </div>
+
+                <div class="copy_rights">
+                    <hr />
+
+                    <p>© 2023 - Lux Ventus by Zine.E.Falouti</p>
+                </div>
+            </footer>
         </div>
-
-        <input type="checkbox" id="menu-toggle" />
-        <label for="menu-toggle" class="hamburger-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-        <nav class="header-nav">
-          <div class="header-menu">Fashion</div>
-          <div class="header-menu">Lifestyle</div>
-          <div class="header-menu">Spiritual</div>
-          <div class="header-menu">Mental&nbsp;Health</div>
-          <button>Contact&nbsp;Us</button>
-          <div class="header-search">
-            <img src="image/search boxs.png" alt="" />
-          </div>
-        </nav>
-      </header>
-
-      <section class="hero">
-        <div class="hero-content">
-          <div class="image-top-text">LUX VENTUS MAGAZINE</div>
-          <div class="hero-text">
-            We Are the <span class="fancy-text">Ventus&nbsp;Fashion</span>
-          </div>
-          <p>
-            We like to gossip about everything, but we will <br />never forget
-            the daily fashion dose.
-          </p>
-        </div>
-      </section>
-      
-
-    <!-- TOPICS SECTION -->
-
-    <section class="topics">
-      <h2>Topics</h2>
-      <div class="features">
-        <div class="sec Lingerie">
-          <img src="./image/Topics/lingerie-underwear.png" alt="Lingerie" />
-          <p>Lingerie</p>
-          <button class="view_more">View More</button>
-        </div>
-
-        <div class="sec spring">
-          <img src="./image/Topics/dress.png" alt="Spring" />
-          <p>Spring</p>
-          <button class="view_more">View More</button>
-        </div>
-
-        <div class="sec yoga">
-          <img src="./image/Topics/chakra@3x.png" alt="Yoga" />
-          <p>Yoga</p>
-          <button class="view_more">View More</button>
-        </div>
-
-        <div class="sec glow">
-          <img src="./image/Topics/lipstick.png" alt="Glow" />
-          <p>Glow</p>
-          <button class="view_more">View More</button>
-        </div>
-
-        <div class="sec ensembles">
-          <img src="./image/Topics/dress-wedding-dress.png" alt="Ensembles" />
-          <p>Ensembles</p>
-          <button class="view_more">View More</button>
-        </div>
-
-        <div class="sec skin_Care">
-          <img src="./image/Topics/mask-theater.png" alt="Skin Care" />
-          <p>Skin Care</p>
-          <button class="view_more">View More</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- spacer -->
-    <hr />
-
-    <!-- HOT section -->
-
-    <section>
-      <div class="hot">
-        <div class="image_container">
-          <img
-            src="./image/Hot/c14213fa3580f6fafe3cfec5e5ce3a72.jfif"
-            alt="Fashion Image"
-            class="main_image"
-          />
-          <button class="category_tag">FASHION</button>
-        </div>
-        <div class="content">
-          <div class="author_and_date">
-            <div class="info">
-              <img
-                src="./image/Hot/556f5faa4a8978e04d8cbef4c370209c.jfif"
-                alt=""
-              />
-              <p class="author_name">Mallory Reyn</p>
-              <p class="post_date">April 14th, 2023</p>
-            </div>
-            <div class="coming_in_hot">
-              <p class="status_tag">COMING IN HOT!</p>
-            </div>
-          </div>
-          <h2 class="post_title">
-            The Latest Trends from the Moon Fashion Week.
-          </h2>
-          <p class="post_excerpt">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
-            mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-            fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
-            vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum.
-          </p>
-          <div class="more">
-            <img src="./image/Hot/arrow-small-right.png" alt="Arrow" />
-            <a href="#" class="read_more">Read More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- third section by mariami -->
-    <section>
-      <h2>Trending</h2>
-      <div class="trending-area">
-        <!---------------------------trendig-box ------------------------->
-        <div class="trending-box">
-          <div class="trending-top">
-            <div class="image_container">
-              <img
-                src="./image/stress-girl.png"
-                alt="Fashion Image"
-                class="trending-image"
-              />
-              <button class="category_tag">LIFESTYLE</button>
-            </div>
-          </div>
-
-          <div class="content">
-            <div class="author_and_date">
-              <div class="info">
-                <img
-                  src="./image/Hot/556f5faa4a8978e04d8cbef4c370209c.jfif"
-                  alt=""
-                />
-                <p class="author_name">Mallory Reyn</p>
-                <p class="post_date">April 14th, 2023</p>
-              </div>
-            </div>
-            <h2 class="post_title">
-              10 Things to help you with social stress.
-            </h2>
-            <p class="post_excerpt">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-              massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-              fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
-              vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum.
-            </p>
-            <div class="more">
-              <img src="./image/Hot/arrow-small-right.png" alt="Arrow" />
-              <a href="#" class="read_more">Read More</a>
-            </div>
-          </div>
-        </div>
-        <!--------end trending-box------------------------->
-
-        <!---------------------------trendig-box ------------------------->
-        <div class="trending-box">
-          <div class="trending-top">
-            <div class="image_container">
-              <img
-                src="./image/naked-girl.png"
-                alt="Fashion Image"
-                class="trending-image"
-              />
-              <button class="category_tag">SUMMER</button>
-            </div>
-          </div>
-
-          <div class="content">
-            <div class="author_and_date">
-              <div class="info">
-                <img
-                  src="./image/Hot/556f5faa4a8978e04d8cbef4c370209c.jfif"
-                  alt=""
-                />
-                <p class="author_name">Mallory Reyn</p>
-                <p class="post_date">April 14th, 2023</p>
-              </div>
-            </div>
-            <h2 class="post_title">The summer 2023 lineup is finally here.</h2>
-            <p class="post_excerpt">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-              massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-              fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
-              vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum.
-            </p>
-            <div class="more">
-              <img src="./image/Hot/arrow-small-right.png" alt="Arrow" />
-              <a href="#" class="read_more">Read More</a>
-            </div>
-          </div>
-        </div>
-        <!--------end trending-box------------------------->
-      </div>
-    </section>
-
-    <!-- 4 section by mariami -->
-
-    <section>
-      <div class="trending-area">
-        <!---------------------------trendig-box ------------------------->
-        <div class="trending-row">
-          <div class="trending-top">
-            <div class="image_container">
-              <img
-                src="./image/stress-girl.png"
-                alt="Fashion Image"
-                class="trending-image"
-              />
-              <button class="category_tag">LIFESTYLE</button>
-            </div>
-          </div>
-
-          <div class="content">
-            <div class="author_and_date">
-              <div class="info">
-                <img
-                  src="./image/Hot/556f5faa4a8978e04d8cbef4c370209c.jfif"
-                  alt=""
-                />
-                <p class="author_name">Mallory Reyn</p>
-                <p class="post_date">April 14th, 2023</p>
-              </div>
-            </div>
-            <h2 class="post_title">
-              10 Things to help you with social stress.
-            </h2>
-            <p class="post_excerpt">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-              massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-              fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
-              vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum.
-            </p>
-            <div class="more">
-              <img src="./image/Hot/arrow-small-right.png" alt="Arrow" />
-              <a href="#" class="read_more">Read More</a>
-            </div>
-          </div>
-        </div>
-        <!--------end trending-box------------------------->
-
-        <!---------------------------trendig-box ------------------------->
-        <div class="trending-row">
-          <div class="trending-top">
-            <div class="image_container">
-              <img
-                src="./image/naked-girl.png"
-                alt="Fashion Image"
-                class="trending-image"
-              />
-              <button class="category_tag">SUMMER</button>
-            </div>
-          </div>
-
-          <div class="content">
-            <div class="author_and_date">
-              <div class="info">
-                <img
-                  src="./image/Hot/556f5faa4a8978e04d8cbef4c370209c.jfif"
-                  alt=""
-                />
-                <p class="author_name">Mallory Reyn</p>
-                <p class="post_date">April 14th, 2023</p>
-              </div>
-            </div>
-            <h2 class="post_title">The summer 2023 lineup is finally here.</h2>
-            <p class="post_excerpt">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-              massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-              fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
-              vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum.
-            </p>
-            <div class="more">
-              <img src="./image/Hot/arrow-small-right.png" alt="Arrow" />
-              <a href="#" class="read_more">Read More</a>
-            </div>
-          </div>
-        </div>
-        <!--------end trending-box------------------------->
-      </div>
-    </section>
-
-    <!--                            LAST SECTION                              -->
-
-    <section class="last">
-      <div class="last_section">
-        <div class="last_section_button">
-          <img src="./image/two-girl.png" alt="fashion photos" />
-          <button>FASHION</button>
-        </div>
-
-        <div class="last_section_info">
-          <div class="last_section_author">
-            <div class="last_section_photo">
-              <img
-                src="./image/Hot/556f5faa4a8978e04d8cbef4c370209c.jfif"
-                alt=""
-              />
-              <p>Mallory Reyn</p>
-            </div>
-
-            <div class="last_section_date">
-              <p>April 14th, 2023</p>
-            </div>
-          </div>
-
-          <div class="last_section_text">
-            <h1>5 Reasons to avoid shopping on saturdays</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur Pellentesque sit amet
-              sapien fringilla, mattis mattis tellus. Nullam quis imperdiet
-              augue. Vestibulum.
-            </p>
-          </div>
-
-          <div class="more last_section_more">
-            <img src="./image/Hot/arrow-small-right.png" alt="Arrow" />
-            <a href="#" class="read_more">Read More</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="last_section">
-        <div class="last_section_button">
-          <img src="./image/hat-girl.png" alt="fashion photos" />
-          <button>ENSEMBLES</button>
-        </div>
-
-        <div class="last_section_info">
-          <div class="last_section_author">
-            <div class="last_section_photo">
-              <img
-                src="./image/Hot/556f5faa4a8978e04d8cbef4c370209c.jfif"
-                alt=""
-              />
-              <p>Mallory Reyn</p>
-            </div>
-
-            <div class="last_section_date">
-              <p>April 14th, 2023</p>
-            </div>
-          </div>
-
-          <div class="last_section_text">
-            <h1>5 Reasons to avoid shopping on saturdays</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur Pellentesque sit amet
-              sapien fringilla, mattis mattis tellus. Nullam quis imperdiet
-              augue. Vestibulum.
-            </p>
-          </div>
-
-          <div class="more last_section_more">
-            <img src="./image/Hot/arrow-small-right.png" alt="Arrow" />
-            <a href="#" class="read_more">Read More</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="last_section">
-        <div class="last_section_button">
-          <img src="./image/red-short.png" alt="fashion photos" />
-          <button>MENTAL HEALTH</button>
-        </div>
-
-        <div class="last_section_info">
-          <div class="last_section_author">
-            <div class="last_section_photo">
-              <img
-                src="./image/Hot/556f5faa4a8978e04d8cbef4c370209c.jfif"
-                alt=""
-              />
-              <p>Mallory Reyn</p>
-            </div>
-
-            <div class="last_section_date">
-              <p>April 14th, 2023</p>
-            </div>
-          </div>
-
-          <div class="last_section_text">
-            <h1>5 Reasons to avoid shopping on saturdays</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur Pellentesque sit amet
-              sapien fringilla, mattis mattis tellus. Nullam quis imperdiet
-              augue. Vestibulum.
-            </p>
-          </div>
-
-          <div class="more last_section_more">
-            <img src="./image/Hot/arrow-small-right.png" alt="Arrow" />
-            <a href="#" class="read_more">Read More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="footer">
-        <div class="footer_logo">
-          <a href="#"><img src="./image/logo.png" alt="" /></a>
-        </div>
-
-        <div class="footer_nav">
-          <h1>Let’s Hang Out</h1>
-          <a href="#"><img src="./image/footer/facebook.png" alt="" /></a>
-          <a href="#"><img src="./image/footer/twitter.png" alt="" /></a>
-          <a href="#"><img src="./image/footer/linkedin.png" alt="" /></a>
-          <a href="#"><img src="./image/footer/youtube.png" alt="" /></a>
-          <a href="#"><img src="./image/footer/instagram.png" alt="" /></a>
-        </div>
-      </div>
-
-      <div class="copy_rights">
-        <hr />
-
-        <p>© 2023 - Lux Ventus by Zine.E.Falouti</p>
-      </div>
-    </footer>
-
-
-
-
-  </div>
-
-  </body>
+    </body>
 </html>
