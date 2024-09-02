@@ -197,7 +197,7 @@ body {
 
 @media screen and (max-width: 700px) {
   .hero-text {
-    font-size: 30px;
+    font-size: 24px;
     margin: 20px 0px;
     font-weight: 400;
     line-height: 100%;
@@ -219,7 +219,7 @@ body {
 }
 @media screen and (max-width: 700px) {
   .hero-content p {
-    font-size: 19px;
+    font-size: 14px;
     margin: 20px 0px;
     font-weight: 400;
     line-height: 100%;
@@ -470,7 +470,7 @@ hr {
 
   line-height: 39px;
   color: #262626;
-  margin: 29.59px 96px 23px 64px;
+  margin: 1% 5% 5% 3%;
 }
 
 .post_excerpt {
@@ -478,7 +478,7 @@ hr {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  margin: 0px 107px 102px 63px;
+  margin: 0px 5% 5% 3%;
 }
 
 .more {
@@ -528,7 +528,7 @@ hr {
 
 .trending-box {
   flex: 1 1 40%; /* Each box takes up 50% of the container's width */
-  min-width: 450px;
+  min-width: 340px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -610,6 +610,7 @@ hr {
   gap: 35.66px;
   margin-bottom: 35.66px;
   max-width: 656.49px;
+  padding: 20px;
 }
 
 
@@ -617,8 +618,6 @@ hr {
 .last_section_author {
   display: flex;
   align-items: center;
-  margin-left: 45.95px;
-  margin-top: 25.58px;
 }
 
 .last_section_photo {
@@ -636,7 +635,7 @@ hr {
 }
 
 .last_section_text {
-  margin-left: 45.95px;
+  margin: 0% 3% 0% 2%;
 }
 
 .last_section_text h1 {
@@ -690,7 +689,6 @@ footer {
 
 .footer_logo img {
   width: 229px;
-  height: 49px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -701,6 +699,10 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 31px;
+}
+
+.footer_nav_box {
+    width: 250px;
 }
 
 .footer_nav_box img {
@@ -722,7 +724,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 .footer_nav_box {
@@ -730,7 +732,7 @@ footer {
 }
 
 .footer_nav_box img {
-    padding: 0px 10px 0px 10px;
+    padding: 0px 5px 0px 5px;
 }
 
 footer hr {
@@ -783,6 +785,7 @@ footer p {
     max-width: 700px;
     flex-direction: column;
     justify-content: space-around;
+    width: 100%;
   }
 
   .hot {
