@@ -241,7 +241,6 @@ h2 {
 }
 
 .topics {
-  max-width: 1440px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -250,7 +249,9 @@ h2 {
 
 .features {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 8px;
 }
 
 section {
@@ -267,7 +268,7 @@ section {
   height: 291px;
   border-radius: 20px;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.05);
-  margin: auto;
+
   background-color: #ffffff;
   transition: 0.2s;
 }
@@ -342,18 +343,17 @@ button {
 }
 
 .sec:hover {
-  transform: translateY(-20px);
+  transform: translateY(-10px);
   background-color: #3abbb2;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* spacer */
+
 
 hr {
   border: 1px;
   height: 1px;
   background-color: #bcbcbc;
-  width: 1267px;
   margin: auto;
   margin-top: 87.5px;
   margin-bottom: 52.5px;
@@ -420,35 +420,35 @@ hr {
 
 .info {
   display: flex;
-  align-items: center;
+  align-items: stretch;
+  justify-content: space-evenly;
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  padding-right: 5%;
+  gap: 10px;
 }
 
 .info img {
-  width: 65.67px;
-  height: 50.77px;
+  width: 65px;
+  height: 55px;
   border-radius: 100%;
   object-fit: cover;
-  margin-left: 64px;
+  
 }
 
 .author_name {
-  width: 168px;
-  height: 21px;
   font-weight: 400;
-  font-family: Poppins;
   color: #bcbcbc;
-  margin-right: 49px;
-  margin-left: 20.99px;
+  align-self: center;
+  flex-grow: 2;
 }
 
 .post_date {
-  width: 167px;
-  height: 21px;
   font-weight: 400;
   color: #bcbcbc;
-  margin: 0;
   font-size: 14px;
   line-height: 21px;
+  align-self: center;
 }
 
 .status_tag {
@@ -475,7 +475,6 @@ hr {
 
 .post_excerpt {
   color: #262626;
-  height: 73px;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -521,20 +520,25 @@ hr {
 /* trending section*/
 .trending-area {
   display: flex;
-  gap: 40px;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 32px;
 }
 
+
 .trending-box {
+  flex: 1 1 40%; /* Each box takes up 50% of the container's width */
+  min-width: 450px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   border-radius: 15px;
-  overflow: hidden;
   margin: auto;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.05);
 }
+
+
 
 .trending-box:hover {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
@@ -561,7 +565,6 @@ hr {
 /* LAST SECTION */
 
 .last_section {
-  max-width: 1204px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -574,7 +577,6 @@ hr {
 
 .last {
   margin-top: 68.2px;
-  max-width: 1440px;
 }
 
 .last_section_button {
@@ -587,8 +589,7 @@ hr {
 
 .last_section_button img {
   border-radius: 20px;
-  width: 547.51px;
-  height: 367.41px;
+  width: 100%;
 }
 
 .last_section_button button {
@@ -610,6 +611,8 @@ hr {
   margin-bottom: 35.66px;
   max-width: 656.49px;
 }
+
+
 
 .last_section_author {
   display: flex;
@@ -642,7 +645,6 @@ hr {
   font-weight: 700;
   line-height: 39px;
   text-align: left;
-  width: 543px;
   height: 94px;
 }
 
@@ -658,8 +660,8 @@ hr {
 
 .last_section:hover {
   transform: translateY(-10px);
-  scale: 1.2;
-  box-shadow: 0px 7px 7px 7px #00000054;
+  scale: 1.01;
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
 }
 
 .last_section_button button:hover {
@@ -671,19 +673,18 @@ hr {
 /* FOOTE SECTIOn */
 
 footer {
-  background-color: #ffffff;
   box-shadow: 6px 0px 6px 0px #0000000d;
+  background-color: #ffffff;
   border-radius: 40px 40px 0 0;
+  padding: 20px 89px 20px 84px;
 }
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 1270px;
   height: 308px;
-  margin: 87px 89px 77px 84px;
-  background-color: #ffffff;
   margin: 0 auto;
 }
 
@@ -698,10 +699,11 @@ footer {
 .footer_nav {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 31px;
 }
 
-.footer_nav a {
+.footer_nav_box img {
   transition: 0.2s;
 }
 
@@ -713,19 +715,33 @@ footer {
   text-align: left;
   width: 227px;
   height: 42px;
+  text-align: center;
+}
+
+.footer_nav_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer_nav_box {
+    text-align: center;
+}
+
+.footer_nav_box img {
+    padding: 0px 10px 0px 10px;
 }
 
 footer hr {
   border: 1px;
   height: 1px;
   background-color: #bcbcbc;
-  width: 1267px;
   margin: 0 auto;
   margin-bottom: 34px;
 }
 
 footer p {
-  width: 413px;
   font-family: Poppins;
   font-size: 14px;
   font-weight: 700;
@@ -735,13 +751,12 @@ footer p {
 }
 
 .copy_rights {
-  width: 1267px;
   margin: 0 auto;
 }
 
 /* social media hovers */
 
-.footer_nav a:hover {
+.footer_nav_box img:hover {
   scale: 1.5;
 }
 
